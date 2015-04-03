@@ -1,0 +1,206 @@
+.sw-title span{
+	background: #fa3aab !important;
+}
+ul.dropdown li a{
+	color: #fa3aab !important;
+}
+ul.menu > li > a {
+    color: #fa3aab !important;
+}
+.project-info{
+	background: #fa3aab !important;
+}
+.contact-page input[type="submit"],
+.comment-form input[type="submit"] {
+	background: #fa3aab !important;
+}
+ul.tags-list-post li a{
+	background: #fa3aab!important;
+}
+.single-post ul.post-tags li i.fa{
+	color: #fa3aab !important;
+}
+.post-meta .fa {
+	color: #fa3aab!important;
+}
+.services-post-head span{
+	background: #EE91C8!important;
+}
+.services-post:hover .services-post-head span  {
+    background: #fa3aab!important;
+}
+.statistic-counter-content{
+	border: 12px solid #EE91C8!important;
+}
+.statistic-counter-content:hover{
+	border: 12px solid #fa3aab!important;
+}
+.statistic-counter-content .fa{
+	 color: #fa3aab!important;
+}
+.wpb_content_element .wpb_tabs_nav li.ui-tabs-active a, .nav.nav-tabs li.active a{
+	background: #fa3aab!important;
+}
+
+/**end**/
+
+ul.menu > li > a {
+    color: #fa3aab !important;
+}
+
+ul.social-icons li a:hover i {
+    color: #fa3aab !important;
+}
+
+.blog-post a.post-type i {
+    color: #fa3aab !important;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.hover-blog .hover-content h2 {
+    color: #fa3aab !important;
+}
+
+.hover-blog .hover-content .post-head:after {
+    background: #fa3aab !important;
+}
+
+.hover-blog .hover-content p {
+    color: #fa3aab !important;
+}
+
+.hover-blog .hover-content a.link-tag {
+    background: #fa3aab url('../images/plus2.png') center center no-repeat !important;
+}
+
+.hover-blog .hover-content ul.post-tags:after {
+    background: #fa3aab !important;
+}
+
+.hover-blog .hover-content ul.post-tags li:before {
+    color: #fa3aab !important;
+}
+
+.hover-blog .hover-content ul.post-tags li a {
+    display: inline-block;
+    color: #fa3aab !important;
+}
+
+.single-post .post-title h1 {
+    color: #fa3aab !important;
+}
+
+.single-post .post-title span {
+    display: inline-block;
+    color: #fa3aab !important;
+}
+
+.single-post ul.post-tags li:before {
+    content: '|';
+    color: #fa3aab !important;
+}
+
+.single-post ul.post-tags li a {
+    color: #fa3aab !important;
+}
+
+ul.tags-list-post li span {
+    color: #fa3aab !important;
+}
+
+ul.tags-list-post li a:hover {
+    background:#fa3aab !important;
+}
+
+ul.share-list li span {
+    display: inline-block;
+    color: #fa3aab !important;
+}
+
+
+ul.share-list li a:hover i {
+    color: #fa3aab !important;
+}
+
+.single-post.with-sidebar ul.post-tags li a i {
+    margin-right: 5px;
+    color: #fa3aab !important;
+}
+
+
+.sidebar-blog h2 {
+    color: #fa3aab !important;
+}
+
+ul.archive-list li a {
+    color: #fa3aab !important;
+}
+
+.single-post.with-sidebar .flex-direction-nav .flex-next:after {
+
+    color:#fa3aab !important;
+}
+
+.single-post.with-sidebar .flex-direction-nav .flex-prev:after {
+    color:#fa3aab !important;
+}
+
+.single-post.with-sidebar .flexslider .flex-next:hover:after {
+    color: #fa3aab !important;
+}
+.single-post.with-sidebar .flexslider .flex-prev:hover:after {
+    color: #fa3aab !important;
+}
+
+.services-page-content h1,
+.about-page-content h1 {
+    color: #fa3aab !important;
+}
+
+.services-page-content p,
+.about-page-content p {
+    color: #fa3aab !important;
+}
+
+.statistic-counter p span.timer {
+    display: block;
+    color: #fa3aab !important;
+
+}
+
+.statistic-counter p {
+    color: #fa3aab !important;
+}
+
+ul.star-rate li span {
+    display: inline-block;
+    color: #fa3aab !important;
+}
+
+ul.star-rate li a.unchecked i {
+    color: #fa3aab !important;
+}
+
+.work-course-post h2 {
+    color: #fa3aab !important;
+}
+
+.contact-box h2 {
+    color: #fa3aab !important;
+}
+
+.contact-page h4 {
+    color: #fa3aab !important;
+}
+
+.contact-page input[type="text"]:focus,
+.contact-page textarea:focus,
+.comment-form input[type="text"]:focus,
+.comment-form textarea:focus {
+    color:#fa3aab !important; 
+}
+
+.project-post .hover-box {
+    background:rgba(250,58,171,0.97)!important;
+}

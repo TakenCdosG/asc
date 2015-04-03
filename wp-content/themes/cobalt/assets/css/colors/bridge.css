@@ -1,0 +1,204 @@
+.sw-title span{
+	background: #a5d549 !important;
+}
+ul.dropdown li a{
+	color: #a5d549 !important;
+}
+ul.menu > li > a {
+    color: #a5d549 !important;
+}
+.project-info{
+	background: #a5d549 !important;
+}
+.contact-page input[type="submit"],
+.comment-form input[type="submit"] {
+	background: #a5d549 !important;
+}
+ul.tags-list-post li a{
+	background: #a5d549!important;
+}
+.single-post ul.post-tags li i.fa{
+	color: #a5d549 !important;
+}
+.post-meta .fa {
+	color: #a5d549!important;
+}
+.services-post-head span{
+	background: #CDEE8E!important;
+}
+.services-post:hover .services-post-head span  {
+    background: #a5d549!important;
+}
+.statistic-counter-content{
+	border: 12px solid #CDEE8E!important;
+}
+.statistic-counter-content:hover{
+	border: 12px solid #a5d549!important;
+}
+.statistic-counter-content .fa{
+	 color: #a5d549!important;
+}
+.wpb_content_element .wpb_tabs_nav li.ui-tabs-active a, .nav.nav-tabs li.active a{
+	background: #a5d549!important;
+}
+
+/**end**/
+ul.menu > li > a {
+    color: #a5d549 !important;
+}
+ul.social-icons li a:hover i {
+    color: #a5d549 !important;
+}
+
+.blog-post a.post-type i {
+    color: #a5d549 !important;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.hover-blog .hover-content h2 {
+    color: #a5d549 !important;
+}
+
+.hover-blog .hover-content .post-head:after {
+    background: #a5d549 !important;
+}
+
+.hover-blog .hover-content p {
+    color: #a5d549 !important;
+}
+
+.hover-blog .hover-content a.link-tag {
+    background: #a5d549 url('../images/plus2.png') center center no-repeat !important;
+}
+
+.hover-blog .hover-content ul.post-tags:after {
+    background: #a5d549 !important;
+}
+
+.hover-blog .hover-content ul.post-tags li:before {
+    color: #a5d549 !important;
+}
+
+.hover-blog .hover-content ul.post-tags li a {
+    display: inline-block;
+    color: #a5d549 !important;
+}
+
+.single-post .post-title h1 {
+    color: #a5d549 !important;
+}
+
+.single-post .post-title span {
+    display: inline-block;
+    color: #a5d549 !important;
+}
+
+.single-post ul.post-tags li:before {
+    content: '|';
+    color: #a5d549 !important;
+}
+
+.single-post ul.post-tags li a {
+    color: #a5d549 !important;
+}
+
+ul.tags-list-post li span {
+    color: #a5d549 !important;
+}
+
+ul.tags-list-post li a:hover {
+    background:#a5d549 !important;
+}
+
+ul.share-list li span {
+    display: inline-block;
+    color: #a5d549 !important;
+}
+
+
+ul.share-list li a:hover i {
+    color: #a5d549 !important;
+}
+
+.single-post.with-sidebar ul.post-tags li a i {
+    margin-right: 5px;
+    color: #a5d549 !important;
+}
+
+
+.sidebar-blog h2 {
+    color: #a5d549 !important;
+}
+
+ul.archive-list li a {
+    color: #a5d549 !important;
+}
+
+.single-post.with-sidebar .flex-direction-nav .flex-next:after {
+
+    color:#a5d549 !important;
+}
+
+.single-post.with-sidebar .flex-direction-nav .flex-prev:after {
+    color:#a5d549 !important;
+}
+
+.single-post.with-sidebar .flexslider .flex-next:hover:after {
+    color: #a5d549 !important;
+}
+.single-post.with-sidebar .flexslider .flex-prev:hover:after {
+    color: #a5d549 !important;
+}
+
+.services-page-content h1,
+.about-page-content h1 {
+    color: #a5d549 !important;
+}
+
+.services-page-content p,
+.about-page-content p {
+    color: #a5d549 !important;
+}
+
+.statistic-counter p span.timer {
+    display: block;
+    color: #a5d549 !important;
+
+}
+
+.statistic-counter p {
+    color: #a5d549 !important;
+}
+
+ul.star-rate li span {
+    display: inline-block;
+    color: #a5d549 !important;
+}
+
+ul.star-rate li a.unchecked i {
+    color: #a5d549 !important;
+}
+
+.work-course-post h2 {
+    color: #a5d549 !important;
+}
+
+.contact-box h2 {
+    color: #a5d549 !important;
+}
+
+.contact-page h4 {
+    color: #a5d549 !important;
+}
+
+.contact-page input[type="text"]:focus,
+.contact-page textarea:focus,
+.comment-form input[type="text"]:focus,
+.comment-form textarea:focus {
+    color:#a5d549 !important; 
+}
+
+.project-post .hover-box {
+    background: rgba(165,213,73,.97)!important;
+}

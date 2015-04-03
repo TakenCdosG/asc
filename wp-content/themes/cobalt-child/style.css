@@ -1,0 +1,14 @@
+/*
+Theme Name: Cobalt Child
+Theme URI: http://themeforest.net/user/phpface
+Author: Toan Nguyen
+Author URI: http://themeforest.net/user/phpface
+Description: Responsive Multipurpose Wordpress Theme
+Version: 1.0.0
+License: GNU General Public License
+Template: cobalt
+License URI: license.txt
+Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: cobalt
+*/
+@import url("../cobalt/style.css");

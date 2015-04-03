@@ -1,0 +1,206 @@
+.sw-title span{
+	background: #6b798f !important;
+}
+ul.dropdown li a{
+	color: #6b798f !important;
+}
+ul.menu > li > a {
+    color: #6b798f !important;
+}
+.project-info{
+	background: #6b798f !important;
+}
+.contact-page input[type="submit"],
+.comment-form input[type="submit"] {
+	background: #6b798f !important;
+}
+ul.tags-list-post li a{
+	background: #6b798f!important;
+}
+.single-post ul.post-tags li i.fa{
+	color: #6b798f !important;
+}
+.post-meta .fa {
+	color: #6b798f!important;
+}
+.services-post-head span{
+	background: #B8C0CE!important;
+}
+.services-post:hover .services-post-head span  {
+    background: #6b798f!important;
+}
+.statistic-counter-content{
+	border: 12px solid #B8C0CE!important;
+}
+.statistic-counter-content:hover{
+	border: 12px solid #6b798f!important;
+}
+.statistic-counter-content .fa{
+	 color: #6b798f!important;
+}
+.wpb_content_element .wpb_tabs_nav li.ui-tabs-active a, .nav.nav-tabs li.active a{
+	background: #6b798f!important;
+}
+
+/**end**/
+
+ul.menu > li > a {
+    color: #6b798f !important;
+}
+
+ul.social-icons li a:hover i {
+    color: #6b798f !important;
+}
+
+.blog-post a.post-type i {
+    color: #6b798f !important;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.hover-blog .hover-content h2 {
+    color: #6b798f !important;
+}
+
+.hover-blog .hover-content .post-head:after {
+    background: #6b798f !important;
+}
+
+.hover-blog .hover-content p {
+    color: #6b798f !important;
+}
+
+.hover-blog .hover-content a.link-tag {
+    background: #6b798f url('../images/plus2.png') center center no-repeat !important;
+}
+
+.hover-blog .hover-content ul.post-tags:after {
+    background: #6b798f !important;
+}
+
+.hover-blog .hover-content ul.post-tags li:before {
+    color: #6b798f !important;
+}
+
+.hover-blog .hover-content ul.post-tags li a {
+    display: inline-block;
+    color: #6b798f !important;
+}
+
+.single-post .post-title h1 {
+    color: #6b798f !important;
+}
+
+.single-post .post-title span {
+    display: inline-block;
+    color: #6b798f !important;
+}
+
+.single-post ul.post-tags li:before {
+    content: '|';
+    color: #6b798f !important;
+}
+
+.single-post ul.post-tags li a {
+    color: #6b798f !important;
+}
+
+ul.tags-list-post li span {
+    color: #6b798f !important;
+}
+
+ul.tags-list-post li a:hover {
+    background:#6b798f !important;
+}
+
+ul.share-list li span {
+    display: inline-block;
+    color: #6b798f !important;
+}
+
+
+ul.share-list li a:hover i {
+    color: #6b798f !important;
+}
+
+.single-post.with-sidebar ul.post-tags li a i {
+    margin-right: 5px;
+    color: #6b798f !important;
+}
+
+
+.sidebar-blog h2 {
+    color: #6b798f !important;
+}
+
+ul.archive-list li a {
+    color: #6b798f !important;
+}
+
+.single-post.with-sidebar .flex-direction-nav .flex-next:after {
+
+    color:#6b798f !important;
+}
+
+.single-post.with-sidebar .flex-direction-nav .flex-prev:after {
+    color:#6b798f !important;
+}
+
+.single-post.with-sidebar .flexslider .flex-next:hover:after {
+    color: #6b798f !important;
+}
+.single-post.with-sidebar .flexslider .flex-prev:hover:after {
+    color: #6b798f !important;
+}
+
+.services-page-content h1,
+.about-page-content h1 {
+    color: #6b798f !important;
+}
+
+.services-page-content p,
+.about-page-content p {
+    color: #6b798f !important;
+}
+
+.statistic-counter p span.timer {
+    display: block;
+    color: #6b798f !important;
+
+}
+
+.statistic-counter p {
+    color: #6b798f !important;
+}
+
+ul.star-rate li span {
+    display: inline-block;
+    color: #6b798f !important;
+}
+
+ul.star-rate li a.unchecked i {
+    color: #6b798f !important;
+}
+
+.work-course-post h2 {
+    color: #6b798f !important;
+}
+
+.contact-box h2 {
+    color: #6b798f !important;
+}
+
+.contact-page h4 {
+    color: #6b798f !important;
+}
+
+.contact-page input[type="text"]:focus,
+.contact-page textarea:focus,
+.comment-form input[type="text"]:focus,
+.comment-form textarea:focus {
+    color:#6b798f !important; 
+}
+
+.project-post .hover-box {
+    background:rgba(107,121,143,0.97)!important;
+}

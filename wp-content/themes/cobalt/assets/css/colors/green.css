@@ -1,0 +1,205 @@
+.sw-title span{
+	background: #3fc35f !important;
+}
+ul.dropdown li a{
+	color: #3fc35f !important;
+}
+ul.menu > li > a {
+    color: #3fc35f !important;
+}
+.project-info{
+	background: #3fc35f !important;
+}
+.contact-page input[type="submit"],
+.comment-form input[type="submit"] {
+	background: #3fc35f !important;
+}
+ul.tags-list-post li a{
+	background: #3fc35f!important;
+}
+.single-post ul.post-tags li i.fa{
+	color: #3fc35f !important;
+}
+.post-meta .fa {
+	color: #3fc35f!important;
+}
+.services-post-head span{
+	background: #3fc35f!important;
+}
+.services-post:hover .services-post-head span  {
+    background: #6AE287!important;
+}
+.statistic-counter-content{
+	border: 12px solid #6AE287!important;
+}
+.statistic-counter-content:hover{
+	border: 12px solid #3fc35f!important;
+}
+.statistic-counter-content .fa{
+	 color: #3fc35f!important;
+}
+.wpb_content_element .wpb_tabs_nav li.ui-tabs-active a, .nav.nav-tabs li.active a{
+	background: #3fc35f!important;
+}
+
+/**end**/
+
+ul.menu > li > a {
+    color: #3fc35f !important;
+}
+
+ul.social-icons li a:hover i {
+    color: #3fc35f !important;
+}
+
+.blog-post a.post-type i {
+    color: #3fc35f !important;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.hover-blog .hover-content h2 {
+    color: #3fc35f !important;
+}
+
+.hover-blog .hover-content .post-head:after {
+    background: #3fc35f !important;
+}
+
+.hover-blog .hover-content p {
+    color: #3fc35f !important;
+}
+
+.hover-blog .hover-content a.link-tag {
+    background: #3fc35f url('../images/plus2.png') center center no-repeat !important;
+}
+
+.hover-blog .hover-content ul.post-tags:after {
+    background: #3fc35f !important;
+}
+
+.hover-blog .hover-content ul.post-tags li:before {
+    color: #3fc35f !important;
+}
+
+.hover-blog .hover-content ul.post-tags li a {
+    display: inline-block;
+    color: #3fc35f !important;
+}
+
+.single-post .post-title h1 {
+    color: #3fc35f !important;
+}
+
+.single-post .post-title span {
+    display: inline-block;
+    color: #3fc35f !important;
+}
+
+.single-post ul.post-tags li:before {
+    content: '|';
+    color: #3fc35f !important;
+}
+
+.single-post ul.post-tags li a {
+    color: #3fc35f !important;
+}
+
+ul.tags-list-post li span {
+    color: #3fc35f !important;
+}
+
+ul.tags-list-post li a:hover {
+    background:#3fc35f !important;
+}
+ul.share-list li span {
+    display: inline-block;
+    color: #3fc35f !important;
+}
+
+
+ul.share-list li a:hover i {
+    color: #3fc35f !important;
+}
+
+.single-post.with-sidebar ul.post-tags li a i {
+    margin-right: 5px;
+    color: #3fc35f !important;
+}
+
+
+.sidebar-blog h2 {
+    color: #3fc35f !important;
+}
+
+ul.archive-list li a {
+    color: #3fc35f !important;
+}
+
+.single-post.with-sidebar .flex-direction-nav .flex-next:after {
+
+    color:#3fc35f !important;
+}
+
+.single-post.with-sidebar .flex-direction-nav .flex-prev:after {
+    color:#3fc35f !important;
+}
+
+.single-post.with-sidebar .flexslider .flex-next:hover:after {
+    color: #3fc35f !important;
+}
+.single-post.with-sidebar .flexslider .flex-prev:hover:after {
+    color: #3fc35f !important;
+}
+
+.services-page-content h1,
+.about-page-content h1 {
+    color: #3fc35f !important;
+}
+
+.services-page-content p,
+.about-page-content p {
+    color: #3fc35f !important;
+}
+
+.statistic-counter p span.timer {
+    display: block;
+    color: #3fc35f !important;
+
+}
+
+.statistic-counter p {
+    color: #3fc35f !important;
+}
+
+ul.star-rate li span {
+    display: inline-block;
+    color: #3fc35f !important;
+}
+
+ul.star-rate li a.unchecked i {
+    color: #3fc35f !important;
+}
+
+.work-course-post h2 {
+    color: #3fc35f !important;
+}
+
+.contact-box h2 {
+    color: #3fc35f !important;
+}
+
+.contact-page h4 {
+    color: #3fc35f !important;
+}
+
+.contact-page input[type="text"]:focus,
+.contact-page textarea:focus,
+.comment-form input[type="text"]:focus,
+.comment-form textarea:focus {
+    color:#3fc35f !important; 
+}
+
+.project-post .hover-box {
+    background:rgba(63,195,95,0.97)!important;
+}

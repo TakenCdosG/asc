@@ -1,0 +1,27 @@
+<?php
+/**
+ * Create the default template in VC.
+ */
+if( !defined('ABSPATH') ) exit;
+if( !function_exists( 'cobalt_vc_temp_services' ) ){
+	function cobalt_vc_temp_services($data) {
+		$template               = array();
+		$template['name']       = __( 'Services', 'cobalt' );
+		$template['image_path'] = get_template_directory_uri() .'/assets/images/temp-services.png'; // always use preg replace to be sure that "space" will not break logic
+		$template['custom_class'] = 'cobalt_vc_temp_services';
+		$template['content']    = <<<CONTENT
+[vc_row][vc_column width="1/1"][vc_column_text]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore agna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco oris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate elit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint ecat cupidatat non proident.[/vc_column_text][vc_row_inner][vc_column_inner width="1/3"][cobalt_feature title="DEVELOPMENT &amp; DESIGN" icon="fa-desktop" id="feature-1652"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore agna aliqua.[/cobalt_feature][/vc_column_inner][vc_column_inner width="1/3"][cobalt_feature title="24 HOUR SUPPORT" icon="fa-truck" id="feature-7888"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore agna aliqua.[/cobalt_feature][/vc_column_inner][vc_column_inner width="1/3"][cobalt_feature title="SEO OPTIMIZATION" icon="fa-signal" id="feature-7889"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore agna aliqua.[/cobalt_feature][/vc_column_inner][/vc_row_inner][vc_row_inner][vc_column_inner width="1/3"][cobalt_feature title="SOCIAL &amp; MARKETING" icon="fa-globe" id="feature-1653"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore agna aliqua.[/cobalt_feature][/vc_column_inner][vc_column_inner width="1/3"][cobalt_feature title="GROUPED IN EACH FOLDER" icon="fa-folder-open" id="feature-7890"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore agna aliqua.[/cobalt_feature][/vc_column_inner][vc_column_inner width="1/3"][cobalt_feature title="ROCKET HIGH DESIGN" icon="fa-rocket" id="feature-7891"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore agna aliqua.[/cobalt_feature][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row][vc_row][vc_column width="1/1"][vc_column_text]
+<h1>NUMBERS SHOW THE STATISTICS</h1>
+[/vc_column_text][vc_row_inner][vc_column_inner width="1/4"][cobalt_statistic title="Coffe drinked" icon="fa-coffee" from="0" to="3605" id="statistic-8659"][/vc_column_inner][vc_column_inner width="1/4"][cobalt_statistic title="Likes" icon="fa-thumbs-up" from="0" to="12000" id="statistic-5202"][/vc_column_inner][vc_column_inner width="1/4"][cobalt_statistic title="Tagging done" icon="fa-tags" from="0" to="5623" id="statistic-5202"][/vc_column_inner][vc_column_inner width="1/4"][cobalt_statistic title="Games played" icon="fa-gamepad" from="0" to="359" id="statistic-5202"][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row][vc_row][vc_column width="1/1"][vc_column_text]
+<h1>POLLS &amp; STATISTICS</h1>
+[/vc_column_text][/vc_column][/vc_row][vc_row][vc_column width="4/12"][vc_progress_bar values="71|Frontend Development,85|Photoshop,76|Wordpress,53|Plugins" bgcolor="bar_grey"][/vc_column][vc_column width="8/12"][vc_tabs][vc_tab title="Graphic Design" tab_id="1411981881-1-72"][vc_column_text]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do smod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad inim veniam, quis nostrud exercitation ullamco laboris nisi ut liquip ex ea commodo consequat. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo, sed do smod tempor incididunt ut labore et dolore magna aliqua.[/vc_column_text][/vc_tab][vc_tab title="Visualisation" tab_id="1411981881-2-65"][vc_column_text]Sed placerat pretium nulla et cursus. Donec ex ex, malesuada suscipit ante id, ultricies dignissim tellus. Proin vestibulum eget urna ac luctus.
+
+<em>Cras elementum diam et sem dictum bibendum. Suspendisse nisl lacus, ultrices dictum porta a, suscipit ac dui. </em>
+
+Duis vel nunc id turpis feugiat egestas sed sed odio. Sed sed erat vitae nisl porta mollis sit amet sit amet sem. Nam id mauris et ex iaculis tempor a sit amet erat[/vc_column_text][/vc_tab][vc_tab title="Interior" tab_id="1411981962665-2-8"][vc_column_text]Fusce faucibus tortor ut nisi euismod imperdiet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam consequat a elit vitae semper. Etiam placerat aliquet lorem eu fringilla. Donec commodo accumsan tellus nec efficitur. Maecenas purus lectus, maximus quis euismod quis, mattis quis erat. Vestibulum sit amet orci eget justo luctus maximus. Etiam quis nisi at felis commodo aliquam[/vc_column_text][/vc_tab][/vc_tabs][/vc_column][/vc_row]
+CONTENT;
+		array_unshift($data, $template);
+		return $data;
+	}	
+	add_filter( 'vc_load_default_templates', 'cobalt_vc_temp_services', 110, 1 );
+}
