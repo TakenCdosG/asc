@@ -1,6 +1,4 @@
 <?php
-update_option('siteurl','http://asc.local');
-update_option('home','http://asc.local');
 if( !defined('ABSPATH') ) exit; // don't access me directly.
 /**
  * Archived all core functions of Cobalt theme.
