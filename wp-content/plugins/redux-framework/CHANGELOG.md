@@ -1,15 +1,46 @@
 # Redux Framework Changelog
 
-##3.4.4.9.4
+## 3.5.1
+* Release: Wp.org release.
+
+## 3.5.0.7
+* Modified: Redux News dashboard widget appears only when dev_mode is true or in a local host environment.
+
+## 3.5.0.6
+* Fixed     #2127 - Elusive icons not working in footer as before.
+* Fixed     Issue where Status tab not showing extension versions properly.
+* Fixed     Issue in support URL not passing data correctly.
+
+## 3.5.0.5
+* Fixed     Support URLs now work even if max_input_vars is way low in PHP 5.3+
+
+## 3.5.0.4
+* Fixed     #2197 - Import/export not loading proper for those who have opted to install Wordpress in ways it was never intended.
+
+## 3.5.0.3
+* Fixed:    'Generate Support URL' feature kicking back error. 
+
+## 3.5.0.2
+* Fixed     Sortable checkbox labels not displaying properly.
+* Fixed     Sortable textbox not displaying default value as placeholder.
+* Updated:  sample-config with accurate example for both sortable modes.
+
+## 3.5.0.1
+* Fixed     #2181 - Fixed issue with Ajax Save when PHP 5.3 Magic Quotes were disabled.
+
+## 3.5.0     OFFICIAL RELEASE
+            Various fixes and improvements for release.
+
+## 3.4.4.9.4
 * Fixed:    #2181 - Issue with PHP < 5.4 and the Ace Editor field. Oy.
 
-##3.4.4.9.3
+## 3.4.4.9.3
 * Fixed:    #2163 - Undefined error in JS.
 
-##3.4.4.9.2
+## 3.4.4.9.2
 * Fixed:    #2176 - Infinite loop in the customizer for live preview of themes.
 
-##3.4.4.9.1
+## 3.4.4.9.1
 * Fixed:    Support page now works.
 * Fixed:    Fix for MySQL deprecated functions in php 5.5+.
 
