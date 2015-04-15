@@ -21,5 +21,8 @@ function create_news_posttype() {
 		)
 	);
 }
+
 // Hooking up function to theme setup
 add_action( 'init', 'create_news_posttype' );
+
+wp_enqueue_style( 'editor', get_stylesheet_directory_uri() . '/editor-style.css' );
