@@ -1,0 +1,203 @@
+/*
+* Author: Franklin Gitonga
+* Template: Radius Radium Themes HTML Base Theme
+* Version: 1.0.50
+* Bootstrap version: 2.3.0
+* Copyright 2012 RadiumThemes
+* www: http://radiumthemes.com
+* mail: frank@radiumthemes.com
+*/
+
+
+/* ==========================================================================
+   Radium Themes HTML Base Theme custom styles
+   ========================================================================== */
+
+$gutter: 20px;
+$main-color: #ce4dd6;
+$border_style: solid;
+$radius: 10px;
+$body_fonts: 14px/23px Helvetica Neue, HelveticaNeue, Helvetica-Neue, Helvetica, Arial, sans-serif;
+
+@import "mixins";
+
+@import "font-awesome";
+@import "typography";
+@import "forms";
+
+// Custom
+@import "gallery";
+
+
+* {
+	margin: 0;
+	padding: 0;
+	
+	-webkit-font-smoothing: antialiased;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+	
+::selection { 
+	color: #fff;
+	background: $accent_color;
+}
+	
+body { color: #a48d66; }
+ 
+b { color: #c3522f; }
+
+h1, h2, h3, h4, h5, h6 b {
+ 	color: #c3522f;
+}
+
+
+/* =Layout */
+.boxed {
+	margin: 2.25em auto;
+	max-width: 1282px;
+	width: 90%;
+	
+	.wrapper {
+		background-color: #fefefe;
+		box-shadow: 0 0 60px rgba(0,0,0,.2);
+		overflow: hidden;
+	}
+}
+
+/* =General 
+ -----------------------------------------------------------*/
+.center { text-align: center; }
+
+/* =Colors 
+ -----------------------------------------------------------*/
+.blue-bg{
+	background-color: #068fd5;
+ 	*{ color: #fff; } 
+}
+
+.blue2-bg{
+	background-color: #6074d7;
+	*{ color: #fff; } 
+}
+
+.purple-bg{
+	background-color: #a47ac4;
+	*{ color: #fff; } 
+}
+
+.beige-bg{
+	background-color: #f6f3ef;
+	*{ color: #000; } 
+}
+
+/* =Header
+ -----------------------------------------------------------*/
+#header {
+ 	text-shadow: 0 1px 0 #000;
+	background: #485053;
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #485053 0%, #3b4447 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#485053), color-stop(100%,#3b4447));
+	background: -webkit-linear-gradient(top, #485053 0%,#3b4447 100%);
+	background: -o-linear-gradient(top, #485053 0%,#3b4447 100%);
+	background: -ms-linear-gradient(top, #485053 0%,#3b4447 100%);
+	background: linear-gradient(to bottom, #485053 0%,#3b4447 100%);
+	position: relative;
+	z-index: 2;
+	-webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .3);
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .3);
+	color: #c8cacb;
+	border-top: 1px solid #2d3235;
+	width: 100%;
+	
+	h1 a { color: #fff; }
+	
+	.btn {
+		margin-top: 15px;
+		float: right;
+	}
+}
+
+/* =Branding */  
+#main-logo h1 { margin-top: 0; }	
+
+ #logo img { margin-right: 15px; float: left;  	}
+ 
+ #logo_text { 
+  	font-size: 30px;
+ 	margin-right: 15px;
+ 	display: inline-block;
+ 	margin-bottom: 0;
+ 	}
+ 	
+ #branding-tagline { margin-top: 5px; }
+ 	
+ #branding-tagline p {	
+ 	margin-bottom: 0; 
+ 	color: #45484D;
+ 	}
+ 
+ #top .social-media-links{ text-align: right; }	
+ 
+/* =Navigation */ 
+#navigation {
+    position: relative;
+   	z-index: 1000;
+}
+
+/* = Page */
+#page-title { padding: 22px 0; }
+
+#main {
+	
+	#main-inner { 
+	-webkit-transition: opacity .5s ease-in-out;
+	  -moz-transition: opacity .5s ease-in-out;
+	  -ms-transition: opacity .5s ease-in-out;
+	  -o-transition: opacity .5s ease-in-out;
+	  transition: opacity .5s ease-in-out;
+	  }
+	
+	
+	&.loading { 
+		height: 400px;
+ 		background: url(../img/loader.gif) no-repeat center center;
+ 		
+ 		#main-inner { opacity: 0; }
+	}
+	
+}	
+ 
+/* pagination */
+.pagination {
+	margin: 20px auto;
+	text-align: center;
+}
+	
+  
+ /* =bottom-footer
+ ---------------------------------------------------*/	
+.bottom-footer{
+ 	padding: 20px 0;	
+	border-top: 1px solid rgba(80, 80, 80, 0.14);;
+	color: #505050;
+	font-size: 11px;
+	line-height: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;	
+ 	
+	a { color: #505050; }
+ 
+	.copyright { 
+		text-align: center; 
+		font-size: 11px;
+		line-height: 14px;
+		text-transform: uppercase;
+		letter-spacing: 1px;	
+		margin-bottom: 10px;
+	} 
+}
+ 

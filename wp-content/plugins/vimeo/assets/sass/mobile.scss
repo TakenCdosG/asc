@@ -1,0 +1,178 @@
+
+/* We use this media query to add styles to any device that supports media queries */
+@media only screen { }
+
+/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
+@media only screen and (min-width: 768px) {}
+
+/* Used to alter styles for screens at least 1280px wide. */
+@media only screen and (min-width: 1280px) {}
+
+/* Used to alter styles for screens at least 1440px wide. */
+@media only screen and (min-width: 1440px) {}
+
+/* Apply styles to screens in landscape orientation */
+@media only screen and (orientation: landscape) {}
+
+/* Apply styles to screens in portrait orientation */
+@media only screen and (orientation: portrait) {}
+
+/* We also use Modernizr to add a .touch class to the body when applicable */
+/* You can prepend this class to anything and it will style only for touch devices */
+.touch .my-element {}
+
+/* Even Larger Screens */
+@media only screen and (min-width: 1701px) {	
+ 	
+}
+
+/* Larger Screens */
+@media only screen and (min-width: 1601px) and (max-width: 1700px) {
+
+  	
+}
+
+/* Larger Screens */
+@media only screen and (min-width: 1441px) and (max-width: 1600px) {
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+
+	
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1280px) {  
+	
+}		
+
+/* =Tablet screens (Landscape  mode)*/
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px)
+and (orientation : portrait) { 
+		
+}
+		
+		 	
+/* =Tablet screens (landscape  mode)*/
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) {
+ 	
+}
+
+/* --------------------------------------------------
+:: Mobile Grid
+-------------------------------------------------- */	
+/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
+
+/* Mobile */
+@media only screen and (max-width: 767px) {		
+	
+	/*  General */
+	body { padding: 0 0; }
+	
+	/* Typography */
+	body, p {
+		font-size: 13px;	
+		line-height: 20px;
+	}
+	 	
+	h1,
+	#page-header h1 { font-size: 20px; }
+	
+	h2,
+	.page-template-page-blog-classic-php #post-box .entry-title, 
+	.archive #post-box .entry-title { font-size: 18px;  line-height: 1em; }
+	
+	h3 { font-size: 16px; }
+	h4 { font-size: 14px; }
+	h5 { font-size: 12px; }
+	h6 { font-size: 11px; text-transform: uppercase;	}
+	
+	blockquote, 
+	blockquote p{
+		font-size: 17px;
+		line-height: 30px;
+	}
+	
+	/*Header*/	
+ 		
+ 	#branding {
+  		width: 100% !important;
+		text-align: center;
+ 		img { text-align: center; }
+ 	}
+		
+	#branding-tagline {
+		border-left: none;
+		margin: 0 auto;
+		text-align: center;
+		padding-left: 0;
+		clear: both;
+		float: none;
+		}
+	
+	#branding-tagline p {
+		text-align: center;
+	}
+	
+	#purchase-link{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 10px;	
+		.btn { 
+			float: none;
+			margin-top: 0;
+		}
+	}
+	
+	/* =Content */
+	.page-header { 
+		max-height: 250px;
+		text-align: center;
+	}
+		
+	#main { 
+		margin: 0 0; 
+		padding-top: 0;
+		max-width: 100%;
+	}
+ 
+	// Page grid
+	.span-16 > h2,
+	.gallery-nav,
+	.radium-gallery-wrapper {
+		padding: 0 20px;	
+	}
+	
+	.radium-gallery.three-columns .page-grid-item,
+	.radium-gallery.four-columns .page-grid-item {
+		width: 100% !important;
+		margin: 0 0 20px 0;
+	}
+	  	
+	/* input */
+	form label {
+	    display: block;
+	    width: 100%;
+	    margin-bottom: 5px;
+	}
+	    
+	.input-small, 
+	input.small, 
+	textarea.small, 
+	select.small,
+	input[type="text"], 
+	input[type="date"], 
+	input[type="datetime"], 
+	input[type="email"], 
+	input[type="number"], 
+	input[type="tel"], 
+	input[type="url"] { width: 100%; }
+  
+ 
+
+}

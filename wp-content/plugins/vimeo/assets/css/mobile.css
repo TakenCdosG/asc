@@ -1,0 +1,66 @@
+/* We use this media query to add styles to any device that supports media queries */
+/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
+/* Used to alter styles for screens at least 1280px wide. */
+/* Used to alter styles for screens at least 1440px wide. */
+/* Apply styles to screens in landscape orientation */
+/* Apply styles to screens in portrait orientation */
+/* We also use Modernizr to add a .touch class to the body when applicable */
+/* You can prepend this class to anything and it will style only for touch devices */
+/* Even Larger Screens */
+/* Larger Screens */
+/* Larger Screens */
+/* Desktops and laptops ----------- */
+/* =Tablet screens (Landscape  mode)*/
+/* =Tablet screens (landscape  mode)*/
+/* --------------------------------------------------
+:: Mobile Grid
+-------------------------------------------------- */
+/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
+/* Mobile */
+@media only screen and (max-width: 767px) { /*  General */
+  /* line 75, ../sass/mobile.scss */
+  body { padding: 0 0; }
+  /* Typography */
+  /* line 78, ../sass/mobile.scss */
+  body, p { font-size: 13px; line-height: 20px; }
+  /* line 84, ../sass/mobile.scss */
+  h1, #page-header h1 { font-size: 20px; }
+  /* line 88, ../sass/mobile.scss */
+  h2, .page-template-page-blog-classic-php #post-box .entry-title, .archive #post-box .entry-title { font-size: 18px; line-height: 1em; }
+  /* line 90, ../sass/mobile.scss */
+  h3 { font-size: 16px; }
+  /* line 91, ../sass/mobile.scss */
+  h4 { font-size: 14px; }
+  /* line 92, ../sass/mobile.scss */
+  h5 { font-size: 12px; }
+  /* line 93, ../sass/mobile.scss */
+  h6 { font-size: 11px; text-transform: uppercase; }
+  /* line 96, ../sass/mobile.scss */
+  blockquote, blockquote p { font-size: 17px; line-height: 30px; }
+  /*Header*/
+  /* line 103, ../sass/mobile.scss */
+  #branding { width: 100% !important; text-align: center; }
+  /* line 106, ../sass/mobile.scss */
+  #branding img { text-align: center; }
+  /* line 109, ../sass/mobile.scss */
+  #branding-tagline { border-left: none; margin: 0 auto; text-align: center; padding-left: 0; clear: both; float: none; }
+  /* line 118, ../sass/mobile.scss */
+  #branding-tagline p { text-align: center; }
+  /* line 122, ../sass/mobile.scss */
+  #purchase-link { width: 100%; text-align: center; margin-bottom: 10px; }
+  /* line 126, ../sass/mobile.scss */
+  #purchase-link .btn { float: none; margin-top: 0; }
+  /* =Content */
+  /* line 133, ../sass/mobile.scss */
+  .page-header { max-height: 250px; text-align: center; }
+  /* line 138, ../sass/mobile.scss */
+  #main { margin: 0 0; padding-top: 0; max-width: 100%; }
+  /* line 147, ../sass/mobile.scss */
+  .span-16 > h2, .gallery-nav, .radium-gallery-wrapper { padding: 0 20px; }
+  /* line 152, ../sass/mobile.scss */
+  .radium-gallery.three-columns .page-grid-item, .radium-gallery.four-columns .page-grid-item { width: 100% !important; margin: 0 0 20px 0; }
+  /* input */
+  /* line 158, ../sass/mobile.scss */
+  form label { display: block; width: 100%; margin-bottom: 5px; }
+  /* line 174, ../sass/mobile.scss */
+  .input-small, input.small, textarea.small, select.small, input[type="text"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="tel"], input[type="url"] { width: 100%; } }

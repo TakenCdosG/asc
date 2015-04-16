@@ -1,0 +1,227 @@
+/*
+* Author: Franklin Gitonga
+* Template: Radius Radium Themes HTML Base Theme
+* Version: 1.0.50
+* Bootstrap version: 2.3.0
+* Copyright 2012 RadiumThemes
+* www: http://radiumthemes.com
+* mail: frank@radiumthemes.com
+*/
+/* ========================================================================== Radium Themes HTML Base Theme custom styles ========================================================================== */
+/*
+ *  Font Awesome 3.0.2
+ *  the iconic font designed for use with Twitter Bootstrap
+ *  -------------------------------------------------------
+ *  The full suite of pictographic icons, examples, and documentation
+ *  can be found at: http://fortawesome.github.com/Font-Awesome/
+ *
+ *  License
+ *  -------------------------------------------------------
+ *  - The Font Awesome font is licensed under the SIL Open Font License - http://scripts.sil.org/OFL
+ *  - Font Awesome CSS, LESS, and SASS files are licensed under the MIT License -
+ *    http://opensource.org/licenses/mit-license.html
+ *  - The Font Awesome pictograms are licensed under the CC BY 3.0 License - http://creativecommons.org/licenses/by/3.0/
+ *  - Attribution is no longer required in Font Awesome 3.0, but much appreciated:
+ *    "Font Awesome by Dave Gandy - http://fortawesome.github.com/Font-Awesome"
+ *
+ *  Contact
+ *  -------------------------------------------------------
+ *  Email: dave@davegandy.com
+ *  Twitter: http://twitter.com/fortaweso_me
+ *  Work: Lead Product Designer @ http://kyruus.com
+ */
+
+
+
+/* line 1, ../sass/_gallery.scss */
+.radium-gallery-wrapper { position: relative; }
+/* line 166, ../sass/_mixins.scss */
+.radium-gallery-wrapper:after { content: ""; display: block; clear: both; }
+/* line 4, ../sass/_gallery.scss */
+.radium-gallery-wrapper [class*="column"] + [class*="column"]:last-child { float: left; }
+
+/* line 8, ../sass/_gallery.scss */
+.gallery-nav { margin-bottom: 30px; margin-top: 20px; }
+/* line 13, ../sass/_gallery.scss */
+.gallery-nav .tabs .tab { color: #505050; padding: 5px 8px; border: 1px solid #eee; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }
+/* line 18, ../sass/_gallery.scss */
+.gallery-nav .tabs .tab.active { border-color: #c3522f; color: #c3522f; }
+
+/* = Set Grid Item Widths
+--------------------------------------------------------------*/
+/* line 29, ../sass/_gallery.scss */
+.radium-gallery { /* Three Columns ----------------------------*/ /* Four Columns ----------------------------*/ }
+/* line 32, ../sass/_gallery.scss */
+.radium-gallery.three-columns .page-grid-item { width: 280px; }
+/* line 37, ../sass/_gallery.scss */
+.radium-gallery.four-columns .page-grid-item { width: 292px; height: 164px;}
+
+/* = Grid Page Setup (Used by Portfolio and gallery page Templates )
+--------------------------------------------------------------*/
+/* line 45, ../sass/_gallery.scss */
+.page-grid-item { overflow: hidden; position: relative; text-align: center; cursor: pointer; -webkit-transition: top 0.3s ease-out; -moz-transition: top 0.3s ease-out; -o-transition: top 0.3 s ease-out; -ms-transition: top 0.3s ease-out; transition: top 0.3s ease-out;  float: left; margin: 0 20px 20px 0; position: relative; width: 292px; height: 164px; /* General -------------------------------*/ }
+/* line 61, ../sass/_gallery.scss */
+.page-grid-item h3 { font-size: 17px; margin-bottom: 0; }
+/* line 66, ../sass/_gallery.scss */
+.page-grid-item a { color: #8F949D; }
+/* line 71, ../sass/_gallery.scss */
+.page-grid-item h3, .page-grid-item h3 a, .page-grid-item h4, .page-grid-item h4 a { font-size: 13px; line-height: normal; text-align: center; color: #1e2224; margin-bottom: 0; }
+/* line 80, ../sass/_gallery.scss */
+.page-grid-item h3, .page-grid-item h4 { font-weight: bold; padding-bottom: 10px; }
+/* line 83, ../sass/_gallery.scss */
+.page-grid-item h3 a:hover, .page-grid-item h4 a:hover { color: #8f949d; }
+/* line 84, ../sass/_gallery.scss */
+.page-grid-item h3 a:active, .page-grid-item h4 a:active { color: #0081C7; }
+/* line 87, ../sass/_gallery.scss */
+.page-grid-item p { text-align: center; width: 100%; }
+/* line 92, ../sass/_gallery.scss */
+.page-grid-item.last { margin-right: 0; }
+/* line 94, ../sass/_gallery.scss */
+.page-grid-item .entry-summary { margin-bottom: 10px; min-height: 46px; }
+/* line 99, ../sass/_gallery.scss */
+.page-grid-item .grid-cats a { color: #818b92; }
+/* line 103, ../sass/_gallery.scss */
+.page-grid-item.active .entry-summary { z-index: 3; position: relative; color: #fff; }
+/* line 112, ../sass/_gallery.scss */
+.page-grid-item.active h3, .page-grid-item.active h3 a, .page-grid-item.active h4, .page-grid-item.active h4 a { color: #fff; }
+/* line 116, ../sass/_gallery.scss */
+.page-grid-item.active a, .page-grid-item.active p { color: #fff; }
+
+
+
+
+.ic_container{
+    vertical-align:baseline;
+    margin:0px;
+    position:relative;
+    /*-moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    -khtml-border-radius:10px;
+    -moz-box-shadow: 0 1px 3px #888;
+    -webkit-box-shadow: 0 1px 3px #888;*/
+}
+.overlay{
+    opacity:0.3;
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+}
+.ic_caption{
+    position:absolute;    
+    opacity:0.6;   
+    overflow:hidden;
+    padding:0px;
+    left:0px;
+    right:0px;
+    cursor:default;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+	margin-left: auto ; margin-right: auto ; width:300px; margin-top:0px;
+}
+.ic_category{
+    text-transform:uppercase;
+    font-size:11px;
+    letter-spacing:3px;
+    padding:5px;
+    margin:0px;
+}
+.ic_caption h3{
+    padding:0px 5px 5px 5px;
+    margin:0px;
+    font-size:18px;
+}
+.ic_text{
+    padding:5px;
+    margin:0px;
+    text-align:justify;
+    font-size:11px;
+
+}
+.play-button {
+    height: 150px;
+    width: 100%;    
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+	cursor:pointer;
+}
+
+.play-button:hover {
+    background-color: rgba(0, 173, 239, 0.9);
+}
+
+.play-button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 70.5px;
+    left: 34px;
+    margin: 0 auto;
+	margin-left: 100px;
+    border-style: solid;
+    border-width: 19.5px 0 19.5px 27px;
+    border-color: transparent transparent transparent rgba(255, 255, 255, 1);
+}
+.playlist-bar {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #FFFFFF;
+    height: 50%;
+	bottom: 0px;
+	position:absolute;
+    max-width: 100%;
+    text-align: center;
+}
+
+.playlist-bar span{
+    display: inline-block;
+    height: 20%;
+    margin: 5% 3% 3%;
+	color:#FFF;
+}
+.yt_header{
+	background-color:#000;
+	height: 140px;
+	width: 100%;
+}
+.yt_stats {
+    color: #CCCCCC;
+    float: right;
+    font: 10px Arial;
+	margin-top:25px;
+	margin-right: 20px;
+    text-align: center;
+}
+
+.yt_subscribe {
+    color: #CCCCCC;
+    float: right;
+	margin-top:5px;
+	margin-right: 20px;
+    text-align: center;
+	width:100px;
+}
+
+.yt_stats .num{
+    font: 18px Arial;
+}
+
+.logo{
+	padding-left:20px;
+	float:left;
+}
+
+.logo p{
+    font: 18px Arial;
+	text-align:center;
+	color:#FFF;
+	margin-top:5px;
+}
+.summary{ 
+	color: #505050; padding: 5px 8px; 
+	border: 1px solid #eee; 
+	-webkit-border-radius: 2px; 
+	-moz-border-radius: 2px; 
+	border-radius: 2px;
+	float: left }
+	

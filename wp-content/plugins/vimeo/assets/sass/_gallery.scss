@@ -1,0 +1,120 @@
+.radium-gallery-wrapper { 
+	@include clearfix(); 
+ 	position: relative;
+	[class*="column"] + [class*="column"]:last-child { float: left; }
+
+}
+
+.gallery-nav {
+	margin-bottom: 30px;
+	margin-top: 20px;
+	
+	.tabs {
+		.tab {  
+			color: #505050;
+			padding: 5px 8px; 
+			border: 1px solid #eee;
+			@include border_radius(2px);
+			&.active { 
+				border-color: #c3522f; 
+				color: #c3522f;
+			}
+		}
+	}
+
+}
+
+/* = Set Grid Item Widths
+--------------------------------------------------------------*/
+.radium-gallery {
+	
+	/* Three Columns ----------------------------*/
+	&.three-columns .page-grid-item {
+ 	    width: 370px;
+  	}
+	
+	 /* Four Columns ----------------------------*/
+	&.four-columns .page-grid-item {
+ 	    width: 272px;
+  	}
+	
+}
+
+/* = Grid Page Setup (Used by Portfolio and gallery page Templates )
+--------------------------------------------------------------*/
+.page-grid-item { 
+	overflow: hidden;
+ 	position: relative;
+	text-align: center;
+	cursor: pointer;
+	-webkit-transition: top 0.3s ease-out;
+	-moz-transition: top 0.3s ease-out;
+	-o-transition: top 0.3 s ease-out;
+	-ms-transition: top 0.3s ease-out;
+	transition: top 0.3s ease-out;
+ 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 3px rgba(0, 0, 0, 0.2);
+ 	float: left;
+ 	margin: 0 20px 20px 0;
+ 	position: relative;
+  	
+	/* General -------------------------------*/
+	h3 {
+		font-size: 17px;
+		margin-bottom: 0;	
+	}
+	
+	a { color: #8F949D; }
+	 
+	h3,
+	h3 a,
+	h4,
+	h4 a {
+	    font-size: 13px;
+	    line-height: normal;
+	    text-align: center;
+	    color: #1e2224;
+	    margin-bottom: 0;
+	}
+	
+	h3,
+	h4 { 
+		font-weight: bold;
+		padding-bottom: 10px;
+		a:hover { color: #8f949d; }
+	  	a:active { color: #0081C7; }
+	}
+	
+	p {
+	    text-align: center;
+	    width: 100%;
+	}
+	
+	&.last { margin-right: 0; }
+ 
+	.entry-summary { 
+		margin-bottom: 10px;
+		min-height: 46px;
+	}
+		
+	.grid-cats a { color: #818b92; }
+	
+	&.active {
+	 		
+		.entry-summary { 
+			z-index: 3;
+			position: relative;
+			color: #fff;
+		}
+		
+		h3,
+		h3 a,
+		h4,
+		h4 a {
+ 		    color: #fff;
+ 		}
+ 		
+ 		a, p { color: #fff; }
+	}
+}
+ 
+ 
