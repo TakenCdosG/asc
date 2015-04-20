@@ -74,7 +74,7 @@
             // Please update the build number with each push, no matter how small.
             // This will make for easier support when we ask users what version they are using.
 
-            public static $_version = '3.5.2';
+            public static $_version = '3.5.3.1';
             public static $_dir;
             public static $_url;
             public static $_upload_dir;
@@ -103,7 +103,7 @@
 
                         $is_plugin = false;
                         foreach ( get_plugins() as $key => $value ) {
-                            if ( strpos( $key, 'redux-framework.php' ) !== false ) {
+                            if ( is_plugin_active( $key ) && strpos( $key, 'redux-framework.php' ) !== false ) {
                                 self::$_dir = trailingslashit( Redux_Helpers::cleanFilePath( WP_CONTENT_DIR . '/plugins/' . plugin_dir_path( $key ) . 'ReduxCore/' ) );
                                 $is_plugin  = true;
                             }
@@ -403,7 +403,7 @@
 
                     if ( $this->args['dev_mode'] == true || Redux_Helpers::isLocalHost() == true ) {
                         include_once 'core/dashboard.php';
-                        
+
                         if ( ! isset ( $GLOBALS['redux_notice_check'] ) ) {
                             include_once 'core/newsflash.php';
 
@@ -456,7 +456,7 @@
                     // menu title/text
                     'page_title'                => '',
                     // option page title
-                    'page_slug'                 => '_options',
+                    'page_slug'                 => '',
                     'page_permissions'          => 'manage_options',
                     'menu_type'                 => 'menu',
                     // ('menu'|'submenu')
@@ -1220,6 +1220,25 @@
                 if ( $this->args['global_variable'] == "" && $this->args['global_variable'] !== false ) {
                     $this->args['global_variable'] = str_replace( '-', '_', $this->args['opt_name'] );
                 }
+
+                // Force dev_mode on WP_DEBUG = true and if it's a local server
+                if ( Redux_Helpers::isLocalHost() || ( defined( 'WP_DEBUG' ) && WP_DEBUG == true ) ) {
+                    $this->args['dev_mode'] = true;
+                }
+
+                // Auto create the page_slug appropriately
+                if ( empty( $this->args['page_slug'] ) ) {
+                    if ( ! empty( $this->args['display_name'] ) ) {
+                        $this->args['page_slug'] = sanitize_html_class( $this->args['display_name'] );
+                    } else if ( ! empty( $this->args['page_title'] ) ) {
+                        $this->args['page_slug'] = sanitize_html_class( $this->args['page_title'] );
+                    } else if ( ! empty( $this->args['menu_title'] ) ) {
+                        $this->args['page_slug'] = sanitize_html_class( $this->args['menu_title'] );
+                    } else {
+                        $this->args['page_slug'] = str_replace( '-', '_', $this->args['opt_name'] );
+                    }
+                }
+
             }
 
             /**
@@ -1358,6 +1377,10 @@
                                 }
 
                                 if ( isset ( $section['hidden'] ) && $section['hidden'] == true ) {
+                                    continue;
+                                }
+
+                                if ( isset( $section['permissions'] ) && ! current_user_can( $section['permissions'] ) ) {
                                     continue;
                                 }
 
@@ -2102,7 +2125,7 @@
 
                             // Set the defaults to the value if not present
                             $doUpdate = false;
-                            
+
                             // Check fields for values in the default parameter
                             if ( ! isset ( $this->options[ $field['id'] ] ) && isset ( $field['default'] ) ) {
                                 $this->options_defaults[ $field['id'] ] = $this->options[ $field['id'] ] = $field['default'];
@@ -2678,7 +2701,7 @@
 
                 if ( ! empty ( $_POST['data'] ) && ! empty ( $redux->args['opt_name'] ) ) {
 
-                    $values        = array();
+                    $values = array();
                     //if (function_exists('get_magic_quotes_gpc') && get_magic_quotes_gpc()) {
                     //    $process = array(&$_GET, &$_POST, &$_COOKIE, &$_REQUEST);
                     //    while (list($key, $val) = each($process)) {
@@ -2699,7 +2722,7 @@
                     $values = $values[ $redux->args['opt_name'] ];
 
 
-                    if ( function_exists('get_magic_quotes_gpc') && get_magic_quotes_gpc() ) {
+                    if ( function_exists( 'get_magic_quotes_gpc' ) && get_magic_quotes_gpc() ) {
                         $values = array_map( 'stripslashes_deep', $values );
                     }
 

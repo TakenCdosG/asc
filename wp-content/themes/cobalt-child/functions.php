@@ -3,7 +3,7 @@ if( !defined('ABSPATH') ) exit;
 // Write your functions here.
 
 // Custom post type function
-function create_news_posttype() {
+/*function create_news_posttype() {
 
 	register_post_type( 'ascnews',
 	// CPT Options
@@ -18,11 +18,16 @@ function create_news_posttype() {
 			'has_archive' => true,
 			'capability_type' => 'post',
 			'rewrite' => array('slug' => 'news'),
+			'register_meta_box_cb' => 'advanced_options_metabox',
 		)
 	);
 }
 
+function advanced_options_metabox() {
+	add_meta_box('post_advanced_options', 'Advanced Options', '', 'ascnews', 'normal', 'default');
+}
+
 // Hooking up function to theme setup
-add_action( 'init', 'create_news_posttype' );
+add_action( 'init', 'create_news_posttype' );*/
 
 wp_enqueue_style( 'editor', get_stylesheet_directory_uri() . '/editor-style.css' );
