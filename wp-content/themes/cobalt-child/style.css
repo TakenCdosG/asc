@@ -18,3 +18,9 @@ Text Domain: cobalt
 /*.bb-item { background-image: url("img/timeline-background.png"); }
 .timeline-title { margin: 20px 20px 0 40px; border-bottom: 3px solid #bc3a42; font: 56px bold; color: #00406b; z-index: 10; }
 .timeline-content { margin: 20px 20px 10px 44px; color: #00406b; font-size: 18px; }*/
+.bb-custom-wrapper nav { width: 200px; margin: 30px auto; }
+.bb-custom-icon { text-indent: -9999px; display: block; margin-right: 10px; float: left; }
+.bb-custom-icon-first { width: 40px; height: 40px; background: url("img/timeline-controls.png") no-repeat 0 0; }
+.bb-custom-icon-arrow-left { width: 40px; height: 40px; background: url("img/timeline-controls.png") no-repeat -40px 0; }
+.bb-custom-icon-arrow-right { width: 40px; height: 40px; background: url("img/timeline-controls.png") no-repeat -80px 0; }
+.bb-custom-icon-last { width: 40px; height: 40px; background: url("img/timeline-controls.png") no-repeat -120px 0; }
