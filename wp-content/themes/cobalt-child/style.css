@@ -12,3 +12,9 @@ Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar
 Text Domain: cobalt
 */
 @import url("../cobalt/style.css");
+
+#bb-bookblock { width: 573px; height: 429px; }
+/* Dismissed due to the issue of the background image diseappering when the book flip pages */
+/*.bb-item { background-image: url("img/timeline-background.png"); }
+.timeline-title { margin: 20px 20px 0 40px; border-bottom: 3px solid #bc3a42; font: 56px bold; color: #00406b; z-index: 10; }
+.timeline-content { margin: 20px 20px 10px 44px; color: #00406b; font-size: 18px; }*/

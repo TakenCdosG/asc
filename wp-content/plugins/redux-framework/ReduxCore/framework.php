@@ -74,7 +74,7 @@
             // Please update the build number with each push, no matter how small.
             // This will make for easier support when we ask users what version they are using.
 
-            public static $_version = '3.5.3.1';
+            public static $_version = '3.5.4';
             public static $_dir;
             public static $_url;
             public static $_upload_dir;
@@ -180,6 +180,7 @@
             public $filesystem = null;
             public $font_groups = array();
             public $lang = "";
+            public $dev_mode_forced = false;
 
             /**
              * Class Constructor. Defines the args for the theme options class
@@ -1222,7 +1223,11 @@
                 }
 
                 // Force dev_mode on WP_DEBUG = true and if it's a local server
-                if ( Redux_Helpers::isLocalHost() || ( defined( 'WP_DEBUG' ) && WP_DEBUG == true ) ) {
+                if ( Redux_Helpers::isLocalHost() || ( Redux_Helpers::isWpDebug() ) ) {
+                    if ( $this->args['dev_mode'] != true ) {
+                        $this->args['update_notice'] = false;
+                    }
+                    $this->dev_mode_forced  = true;
                     $this->args['dev_mode'] = true;
                 }
 
@@ -1924,7 +1929,18 @@
                     $th = '<div class="redux_field_th">' . $th . '</div>';
                 }
 
-                if ( $this->args['default_show'] === true && isset ( $field['default'] ) && isset ( $this->options[ $field['id'] ] ) && $this->options[ $field['id'] ] != $field['default'] && $field['type'] !== "info" && $field['type'] !== "group" && $field['type'] !== "section" && $field['type'] !== "editor" && $field['type'] !== "ace_editor" ) {
+                $filter_arr = array(
+                    'editor',
+                    'ace_editor',
+                    'info',
+                    'section',
+                    'repeater',
+                    'color_scheme',
+                    'social_profiles',
+                    'css_layout'
+                );
+
+                if ( $this->args['default_show'] == true && isset ( $field['default'] ) && isset ( $this->options[ $field['id'] ] ) && $this->options[ $field['id'] ] != $field['default'] && ! in_array( $field['type'], $filter_arr ) ) {
                     $th .= $this->get_default_output_string( $field );
                 }
 
