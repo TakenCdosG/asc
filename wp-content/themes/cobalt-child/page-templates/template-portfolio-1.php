@@ -36,8 +36,16 @@ get_header();?>
 								?>
 								<div class="hover-box">
 									<div class="hover-content">
-										<a class="plus" href="<?php the_permalink();?>"></a>
-										<?php the_title( '<h2><a href="'.get_permalink().'">', '</a></h2>' )?>
+										<?php if ( get_field( "redirect_url" )): ?>
+											<a class="plus" href="<?php echo get_field();?>"></a>
+										<?php else: ?>
+											<a class="plus" href="<?php the_permalink();?>"></a>
+										<?php endif; ?>
+										<?php if ( get_field( "redirect_url" )): ?>
+											<?php the_title( '<h2><a href="'. get_field( "redirect_url" ) .'">', '</a></h2>' )?>
+										<?php else: ?>
+											<?php the_title( '<h2><a href="'.get_permalink().'">', '</a></h2>' )?>
+										<?php endif; ?>
 										<?php
 										/**
 										 * cobalt_post_meta action.
