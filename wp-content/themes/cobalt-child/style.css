@@ -13,8 +13,9 @@ Text Domain: cobalt
 */
 @import url("../cobalt/style.css");
 
-#bb-bookblock { width: 573px; height: 429px; }
-/* Dismissed due to the issue of the background image diseappering when the book flip pages */
+#bb-bookblock { width: 100%; max-width: 573px; height: 429px; max-height: auto; }
+#bb-bookblock img.alignnone { margin: 0; height: auto; }
+/* Dismissed due to the issue of the background image disappering when the book flip pages */
 /*.bb-item { background-image: url("img/timeline-background.png"); }
 .timeline-title { margin: 20px 20px 0 40px; border-bottom: 3px solid #bc3a42; font: 56px bold; color: #00406b; z-index: 10; }
 .timeline-content { margin: 20px 20px 10px 44px; color: #00406b; font-size: 18px; }*/
@@ -24,3 +25,7 @@ Text Domain: cobalt
 .bb-custom-icon-arrow-left { width: 40px; height: 40px; background: url("img/timeline-controls.png") no-repeat -40px 0; }
 .bb-custom-icon-arrow-right { width: 40px; height: 40px; background: url("img/timeline-controls.png") no-repeat -80px 0; }
 .bb-custom-icon-last { width: 40px; height: 40px; background: url("img/timeline-controls.png") no-repeat -120px 0; }
+
+@media screen and (max-width: 480px) {
+	#bb-bookblock { height: 134px; }
+}
