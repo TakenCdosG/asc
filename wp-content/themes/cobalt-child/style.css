@@ -27,5 +27,5 @@ Text Domain: cobalt
 .bb-custom-icon-last { width: 40px; height: 40px; background: url("img/timeline-controls.png") no-repeat -120px 0; }
 
 @media screen and (max-width: 480px) {
-	#bb-bookblock { height: 134px; }
+	#bb-bookblock { height: 230px; }
 }
