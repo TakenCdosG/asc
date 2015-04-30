@@ -369,7 +369,18 @@ $(document).ready(function($) {
 		if ( winDow.width() > 1024 ) {
 			navbarVertical.slideDown(300).removeClass('active');
 		} else {
-			navbarVertical.slideUp(300).removeClass('active');
+			/**
+			 * navbarVertical.slideUp(300).removeClass('active');
+			 */
+			/**
+			 * Code modified on 30/04/15
+			 * To revert it back, just remove the next 3 lines and uncomment the block above this one
+			 * 
+			 * This shouldn't be done
+			 */
+			if (!navbarVertical.hasClass('active')) {
+				navbarVertical.slideUp(300).removeClass('active');
+			}
 		}
 	});
 
